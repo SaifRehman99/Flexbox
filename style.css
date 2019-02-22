@@ -1,0 +1,96 @@
+@media(min-width:600px){
+    .container1{
+
+        /* to display like a float without using float */
+        display: flex;
+    
+        /* as the height and width are all same of the container and the div, bhaley content zyada hu ya kam */
+        /* for this we use */
+    
+        align-items:flex-start;
+        align-items:flex-end;
+        align-items: center;
+    
+        /* this is the by def action */
+        align-items: stretch;
+    
+        /* If we want to flex in col and rows */
+    
+        flex-direction: column;
+        flex-direction: row; 
+        
+        /* If we want to flex in col and row but in reverse Directions */
+        flex-direction: column-reverse;
+        flex-direction: row-reverse;
+    
+        
+    
+    
+    }
+    .container2 {
+        display: flex;
+    
+        /* for putting margin we use  */
+        /* this is by def action */
+        justify-content: flex-start;
+    
+    
+        /* for putting margin we use  */    
+        justify-content: flex-end;
+        justify-content: space-around;
+        justify-content: space-between;
+        justify-content: center;
+    
+    }
+    
+    
+}
+.container3{
+    display: flex;
+    justify-content:space-around;
+
+    /* Flex wrap is used to wrap the div when the size of the window shrinks */
+    flex-wrap: wrap;
+}
+
+
+.container1 div , .container2 div , .container3 div{
+    border:1px solid black;
+    padding: 20px;
+
+}
+
+.box1{
+    /* flex is used to determine the size of the div */
+flex: 1;
+
+/* We can change the order of the box , where to place the box */
+order: 1;
+}
+.box2{
+    /* flex is used to determine the size of the div */
+    flex: 3;
+
+    /* We can change the order of the box , where to place the box */
+order: 3;
+}
+.box3{
+    /* flex is used to determine the size of the div */
+    flex: 1;
+
+    /* We can change the order of the box , where to place the box */
+order: 2;
+
+}
+
+.box{
+    width: 323px;
+    /* in flex box we use flexbasis instead of width */
+    flex-basis: 324px;
+    
+}
+
+.box4{
+    flex-basis: 100px;
+    justify-content:space-around;
+}
