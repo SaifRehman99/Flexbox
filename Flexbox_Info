@@ -1,0 +1,42 @@
+FLEXBOX , FLEXIBLE BOX LAYOUT MODEL!
+
+It allows us to display our content more dynamically and flexible
+
+Parents are called Flex-Container and Children are called Flex-Items
+
+For Flex-Containers there are diff property 
+For Flex-Items there are diff property
+
+so we divide it in two parts
+
+1)Flex Container Property
+display,flex-flow,justify-content,align-content,align-items.
+
+display:flex/inline-flex
+flex occupy whole space while inline flex occupy what he needs.
+
+flex-flow:row/col wrap;
+first is direction and other is flew-wrap
+
+Its all about cross and main axis,cross and main axis differ from column to row.
+In row main axis from top to right and cross axis from top to bottom
+
+In col main axis from top to bottom and cross axis from top to right
+
+And align-items and justify content will act according to the col and rows
+In column/row reverse main and cross axis also changes.
+
+align-items refers/inrelation to cross axis changes 
+justify-items refers/inrelation to the main axis changes
+align content:center/....
+
+2)Flex Items Property
+order,flex,align-self(inrelation to cross-axis).
+
+In this we can flex any sigle flex-item using the flex item property.
+
+flex:0 1 auto (flex-grow) (flex-shrink) (flex-basis)
+
+flexgrow means how much it grows
+flexshrink means how much it shrink when we decrease the size of the window
+flex-basis means how  starting size of elements reffer to main axis
