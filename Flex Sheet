@@ -1,39 +1,40 @@
 #Using display :flex it floats the items in the line without using the floats (no floats)
 		display:flex;
+
 #Using flex :1,2,3 , it determines the size of the div.
 		flex:1;
-		flex:2;(and so on)
+		flex:2,1,auto;(flex-grow, flex-shrink, flex-basis)
 
-       # /* as the height and width are all same of the container and the div, bhaley content zyada hu ya kam */
-       # /* for this we use */
+# /* as the height and width are all same of the container and the div, bhaley content zyada hu ya kam */
+# /* for this we use */
 	    
 		align-items:flex-start;
 		align-items:flex-end;
 		align-items: center;
     
-        /* this is the by def action */
+#/* this is the by def action */
         	align-items: stretch;
 
 
-
-       #/* If we want to flex in col and rows */
+#/* If we want to flex in col and rows */
 	    
 		flex-direction: column;
-		flex-direction: row; 
+		flex-direction: row;
+		flex-direction: row-reverse;
+		flex-direction: column-reverse; 
       
 
-
-       #/* If we want to flex in col and row but in reverse Directions */
+#/* If we want to flex in col and row but in reverse Directions */
 		flex-direction: column-reverse;
 		flex-direction: row-reverse;
 	    
 
-      #/* for putting margin we use  */
-      #/* this is by def action */
+#/* for putting margin we use  */
+#/* this is by def action */
         	justify-content: flex-start;
     
     
-      #/* for putting margin we use  */    
+#/* for putting margin we use  */    
 		justify-content: flex-end;
 		justify-content: space-around;
 		justify-content: space-between;
@@ -41,11 +42,73 @@
 	    
 
 
-      #/* in flex box we use flexbasis instead of width */
+#/* in flex box we use flexbasis instead of width */
     		flex-basis: 324px;
     
 
-     #/* Flex wrap is used to wrap the div when the size of the window shrinks */
+#/* Flex wrap is used to wrap the div when the size of the window shrinks */
     		flex-wrap: wrap;
 
+
+
+FLEXBOX , FLEXIBLE BOX LAYOUT MODEL!
+
+It allows us to display our content more dynamically and flexible
+
+Parents are called Flex-Container and Children are called Flex-Items
+
+For Flex-Container have diff property 
+For Flex-Items have diff property
+
+so we divide it in two parts
+
+1)Flex Container Property
+display,flex-flow,justify-content,align-content,align-items.
+
+display:flex/inline-flex
+flex occupy whole space while inline flex occupy what he needs.
+
+flex-direction:col/row;
+flex-wrap:wrap/nowrap;
+OR
+flex-flow:row/col wrap;
+first is direction and other is flew-wrap
+
+Its all about cross and main axis,cross and main axis differ from column to row.
+In row main axis from top to right and cross axis from top to bottom.
+In row-reverse main starts from top to bottom and cross from top to right.
+
+In col main axis from top to bottom and cross axis from top to right.
+IN col-reverse main axis from bottom to top and cross axis to right to top.
+
+
+And align-items and justify content will act according to the col and rows.
+
+align-items/content refers/inrelation to cross axis changes.
+In align items there must be some height to align vertically.
+align content takes extra spaces in cross axis
+
+justify-items/content refers/inrelation to the main axis changes
+In justify items there must be some width to align vertically
+justify content takes extra spaces in main axis
+
+If we give with to the div it will divide but with using wrap it will give indivually width to every element
+	
+
+align self used to give the property to the indiviual items in the flex items
+2)Flex Items Property
+order,flex,align-self(inrelation to cross-axis).
+
+In this we can flex any sigle flex-item using the flex item property.
+
+flex:0 1 auto (flex-grow) (flex-shrink) (flex-basis)
+
+flexgrow means how much it grows
+flexgrow divides the extra spaces in the flex items
+
+flexshrink means how much it shrink when we decrease the size of the window to make it responsive
+flex-basis means how  starting size of elements reffer to main axis
+
+order in Flexbox means to change the elements in the dom or the order.
+order by default is zero(0) and the greater order will show in the right corner of the pagex
 
